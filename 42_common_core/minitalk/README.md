@@ -113,6 +113,7 @@ i segnali SIGINT e SIGTERM, è possibile eseguire le seguenti chiamate:
 sigemptyset(&handler.sa_mask);
 sigaddset(&handler.sa_mask, SIGINT);
 sigaddset(&handler.sa_mask, SIGTERM);                 laddove handler é la variabile di tipo struct sigaction.
+
 -----------------------------------------------------------------------------------------------------------------------------------
 
 - Il simbolo << in C rappresenta l'operatore di shift a sinistra. Viene utilizzato per spostare i bit di un
