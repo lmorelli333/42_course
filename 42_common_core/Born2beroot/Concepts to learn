@@ -1,0 +1,132 @@
+-What is a Virtual Machine?
+
+ A virtual machine allows multiple isolated operating environments to run on the same physical hardware. This provides a convenient and
+ cost-effective way to run multiple operating systems and applications on a single physical computer.
+ Host Operating System: The host operating system is the physical operating system installed on the physical computer or server.
+ Virtualization Software: Virtualization software, such as VirtualBox is installed on the host operating system. This software creates 
+ and manages the virtual machines and provides the necessary resources such as virtual storage, virtual networking, and virtual
+ hardware devices to the virtual machines.
+ Virtual Machine: A virtual machine is created by the virtualization software. The virtual machine is an isolated environment that
+ has its own operating system, applications, and data.
+ Virtual Hardware: The virtual hardware provides the virtual machine with the necessary hardware resources such as virtual CPU, virtual
+ memory, virtual hard disk, virtual network interface, and virtual input/output devices.
+ Guest Operating System: The guest operating system is installed on the virtual machine. This operating system acts as the primary
+ operating system for the virtual machine and provides the necessary environment for running applications.
+
+-The basic differences between CentOS and Debian.
+
+ CentOS and Debian are two popular open-source operating systems used for various purposes, including server and desktop applications.
+ Both are powerful and efficient, but the methods for installing, updating, and managing software packages are different.
+ Debian has a slower release cycle, with a new stable version released every two years. CentOS follows a more predictable release
+ cycle, with new versions released every few years.
+ Debian provides a high degree of customization, with many options for customizing the operating system and its components.
+ CentOS is more streamlined, with fewer options for customization, but it is more focused on stability and reliability.
+ Both Debian and CentOS have large and active communities, but Debian has a larger and more diverse community, with many developers contributing
+ to the project.
+ In conclusion, Debian is a good choice for projects that require stability and customization, while CentOS is ideal for projects that require
+ stability, reliability, and longer support cycles.
+
+-The purpose of virtual machines.
+ 
+ Virtual machines provide a flexible and efficient solution for many IT needs, including resource isolation, application testing,
+ improved security, disaster recovery, compatibility testing, and cloud computing.
+
+-The difference between aptitude and apt, and what APPArmor is.
+
+ Aptitude and apt are both package management tools used in Debian-based Linux distributions, such as Ubuntu. Apt is a
+ simpler and faster tool for managing packages, while aptitude is a more feature-rich tool that provides a terminal-based user interface
+ for managing packages. Aptitude also includes more advanced features, such as automatic dependency resolution and the ability to track
+ package changes over time.
+ AppArmor: AppArmor is a Linux security module that allows the administrator to define security policies for applications, which are
+ enforced by the kernel at runtime. It provides a flexible and easy-to-use mechanism for controlling access to files, network resources,
+ and other system components. AppArmor helps prevent unauthorized access to resources and reduces the risk of security breaches by
+ controlling the behavior of applications running on the system.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+-What's a .vdi file?
+
+ A .vdi file is a virtual disk image file format that is used by VirtualBox, an open-source virtualization software. A virtual disk image
+ contains the contents of a virtual machine's hard disk, including the operating system, applications, data, and configuration files.
+ The .vdi file can be used to store virtual machines on a host computer and can be easily transported to another computer running VirtualBox.
+ When loaded into VirtualBox, the .vdi file is treated as a physical disk and the virtual machine running on the host computer can access its
+ contents just like it would access a physical hard disk.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+-Partizione.
+
+ La partizione logica di una virtual machine consiste nel suddividere la capacità di archiviazione di una macchina virtuale in diverse
+ partizioni o volumi logici, al fine di organizzare e gestire i dati in modo più efficiente.
+ La suddivisione in partizioni logiche può essere utile per diversi scopi, ad esempio:
+>Separare i dati del sistema operativo e delle applicazioni da quelli degli utenti, per garantire maggiore sicurezza e facilitare il backup
+ e il ripristino in caso di problemi;
+>Allocare spazio dedicato a specifiche attività o applicazioni che richiedono maggiore capacità di archiviazione;
+>Gestire in modo più efficiente lo spazio disponibile, ad esempio evitando di riempire completamente un unico volume
+ e rendendo più facile l'espansione in futuro.
+ La ripartizione logica viene solitamente effettuata al momento della creazione della macchina virtuale, e può essere modificata in seguito se necessario.
+ La gestione delle partizioni logiche è generalmente effettuata tramite strumenti specifici forniti dal sistema operativo ospite della macchina virtuale.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+-Sudo group.
+
+Il gruppo "sudo" è un gruppo di utenti che hanno il permesso di eseguire comandi con privilegi elevati su un sistema Linux o Unix.
+Il nome "sudo" deriva dall'abbreviazione di "superuser do", ovvero l'abilità di eseguire comandi come superutente.
+In altre parole, gli utenti che appartengono al gruppo "sudo" hanno la capacità di eseguire comandi con permessi di amministratore,
+consentendo loro di accedere e modificare file di sistema, installare o rimuovere pacchetti software, avviare o arrestare servizi di sistema e così via.
+L'utilizzo del gruppo "sudo" è considerato una buona pratica di sicurezza, poiché consente di limitare l'accesso ai comandi con privilegi elevati
+solo agli utenti che ne hanno effettivamente bisogno, invece di concedere l'accesso completo al sistema come superutente.
+Per utilizzare il gruppo "sudo", gli utenti devono eseguire il comando "sudo" seguito dal comando che desiderano eseguire.
+Quando un utente che appartiene al gruppo "sudo" esegue un comando con "sudo", il sistema richiederà la password dell'utente per
+verificare la loro identità e autorizzare l'esecuzione del comando con privilegi elevati.
+
+-Firewall.
+
+Un firewall è un software o un hardware che controlla il traffico di rete tra due o più reti, in modo da proteggere una rete da accessi
+non autorizzati provenienti da reti esterne (come Internet) o interni (come una rete Wi-Fi pubblica).
+In pratica, il firewall funziona come una barriera tra la tua rete e il resto del mondo. Esso può essere configurato per bloccare il
+traffico di rete in base a regole specifiche, come il tipo di protocollo utilizzato, il tipo di traffico (come e-mail o navigazione web),
+l'indirizzo IP di origine o di destinazione, e così via.
+
+-UFW.
+
+UFW sta per "Uncomplicated Firewall", ovvero un firewall per Linux che mira a semplificare la configurazione del firewall attraverso un'interfaccia 
+utente intuitiva. In pratica, UFW è un servizio che consente di gestire e controllare l'accesso ai servizi di rete sulla tua macchina Linux, 
+consentendo o bloccando il traffico in ingresso e in uscita. È un servizio utile per migliorare la sicurezza
+della tua macchina e proteggerla dagli attacchi esterni.
+
+-SSH.
+
+SSH sta per "Secure Shell" ed è un protocollo di rete che consente di accedere a un server in modo sicuro e remoto, tramite una connessione
+crittografata. In pratica, SSH è un servizio che permette di stabilire una connessione sicura e cifrata tra due host (client e server) attraverso
+la quale è possibile eseguire comandi, trasferire file e gestire la configurazione di un server. SSH è molto popolare tra gli amministratori di
+sistema e gli utenti di Linux e Unix, poiché consente di gestire i server in modo sicuro da remoto, senza dover accedere fisicamente alla macchina.
+Inoltre, la connessione SSH è crittografata, il che significa che i dati trasmessi attraverso la connessione sono al sicuro dagli occhi indiscreti.
+Per utilizzare il servizio SSH, è necessario avere un client SSH sul proprio computer e un server SSH sul computer remoto.
+Il client si connette al server e stabilisce una sessione crittografata attraverso la quale l'utente può interagire con il server in modo sicuro.
+
+-LVM.
+
+LVM sta per Logical Volume Manager ed è un sistema utilizzato su sistemi Linux per gestire lo spazio di archiviazione dei dischi rigidi o delle
+partizioni di storage. Con LVM, è possibile creare un gruppo di volumi logici (VG) costituito da uno o più dischi fisici. All'interno del VG,
+è possibile creare volumi logici (LV) che possono essere ridimensionati e spostati senza dover riformattare il file system. In altre parole,
+LVM consente di creare una sorta di "partizione virtuale" che può essere facilmente modificata.
+
+-Cron.
+
+Cron consente di programmare l'esecuzione di comandi o script in un momento specifico o in momenti specifici a intervalli regolari. Il formato
+del file crontab è composto da sei campi, che indicano rispettivamente il minuto, l'ora, il giorno del mese, il mese, il giorno della settimana
+e il comando da eseguire. Ogni campo può contenere un valore numerico o una lista di valori separati da virgole. È possibile anche utilizzare
+caratteri speciali come asterischi (*) o barre (/) per rappresentare intervalli o ripetizioni.
+Ad esempio, il seguente comando crontab eseguirà lo script "/home/user/backup.sh" ogni giorno alle 3 del mattino: 0 3 * * * /home/user/backup.sh
+Cron è un utile strumento per automatizzare le attività di routine come il backup dei dati, l'aggiornamento dei pacchetti di sistema,
+l'eliminazione dei file temporanei e molto altro ancora.
+
+-Lighttpd.
+
+Lighttpd is a web server designed to be fast, secure, flexible, and standards-compliant. It is optimized for environments where speed is a
+top priority because it consumes less CPU and RAM than other servers.
+
+-MariaDB.
+
+It is a database. It is used for various purposes, such as data warehousing, e-commerce, enterprise-level functions, and logging applications.
+
+-Phpmyadmin.
+
+It is a web application used to manage databases in a simple and friendly interface.
