@@ -3,7 +3,7 @@ THE PURPOSE OF THIS PROJECT IS TO CODE A SMALL DATA EXCHANGE PROGRAM USING UNIX 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-LIBRERIA <signal.h>>  :
+LIBRERIA  <signal.h>  :
 
 La libreria signal.h in C fornisce le definizioni e le dichiarazioni necessarie per lavorare con i segnali, che sono
 meccanismi utilizzati per comunicare eventi o interruzioni tra i processi o all'interno di un singolo processo.
